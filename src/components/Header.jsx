@@ -1,11 +1,12 @@
 import React from "react";
 import headerbkg from "../Image/Header-bg-Desktop-1.png";
+import headerTabImg from "../Image/Header-Tab.png";
+import headerMobImg from "../Image/Header-Mob.png";
 import headerpageTop from "../Image/00_HomePage-Top.png";
 import headerpageBottom from "../Image/00_HomePage-Bottom.png";
 import headerpageLeft from "../Image/00_HomePage-Left.png";
 import headerpageRight from "../Image/00_HomePage-Right.png";
-import bannerimg1 from "../Image/Header-banner-img1.png";
-import bannerimg2 from "../Image/Header-banner-img2.png";
+
 const Header = () => {
   return (
     <div
@@ -17,7 +18,7 @@ const Header = () => {
         position: "relative",
       }}
     >
-      <div className="relative w-full h-full">
+      <div className="relative w-full h-full hidden lg:block">
         {/* Overlay Image Transition */}
         <div className="absolute inset-0">
           {/* Four splits */}
@@ -155,22 +156,22 @@ const Header = () => {
           }
         }
       `}</style>
-
-      <div class="relative h-36 overflow-hidden border-2 border-white ">
-        <div class="flex h-full animate-slide">
-          <img
-            src={bannerimg1}
-            alt="banner-img-1"
-            class="h-full object-cover"
-          />
-
-          <img
-            src={bannerimg2}
-            alt="banner-img-2"
-            class="h-full object-cover"
-          />
-        </div>
+      <div>
+        <img
+          src={headerTabImg}
+          alt="headerTabImg"
+          className="hidden md:block lg:hidden  w-full max-w-[768px] h-auto"
+        />
+        <img
+          src={headerMobImg}
+          alt="headerMobImg"
+          className="block md:hidden w-full max-w-[480px] h-auto"
+        />
       </div>
+
+      
+
+      
     </div>
   );
 };
