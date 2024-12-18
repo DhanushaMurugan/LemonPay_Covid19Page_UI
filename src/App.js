@@ -1,4 +1,3 @@
-
 import './App.css';
 import './index.css'
 import Features from './components/Features';
@@ -7,16 +6,18 @@ import Header from './components/Header';
 import HeroSection from './components/HeroSection';
 import RegistrationImageBanner from './components/RegistrationImageBanner';
 import CustomerTestimonial from './components/CustomerTestimonial';
-
+import SymptomView from './components/SymptomView';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App ">
       <Header/>
       <Features/>
       <HeroSection/>
+      <RegistrationImageBanner/>
+      <SymptomView/>
       <CustomerTestimonial/>
-      {/* <RegistrationImageBanner/> */}
+      
       <Footer/>
       
     </div>
