@@ -9,10 +9,14 @@ module.exports = {
         slide: {
           '0%': { transform: 'translateX(0%)' },
           '100%': { transform: 'translateX(-100%)' },
+
+          
         },
       },
       animation: {
-        slide: 'slide 5s linear infinite',
+        slide: 'slide 12s linear infinite',
+
+       
       },
     
     },

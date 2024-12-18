@@ -1,15 +1,16 @@
 import React from 'react';
-import headerImg from '../Image/Header-bg-Desktop - 1.png'
+import headerDeskImg1 from '../Image/HeaderDesk-Img1.png'
 import bannerimg1 from '../Image/Header-banner-img1.png'
 import bannerimg2 from '../Image/Header-banner-img2.png'
 const Header = () => {
     return (
         <div>
             <div className="">
-                <img src={headerImg} alt='headerImg' />
+                <img src={headerDeskImg1} alt='headerImg' />
+                
             </div>
-            <div class="relative w-full h-[300px] overflow-hidden bg-gray-200">
-                <div class="flex w-[200%] h-full animate-slide">
+            <div class="relative h-36 overflow-hidden border-2 border-white ">
+                <div class="flex h-full animate-slide">
 
                     <img
                         src={bannerimg1}
