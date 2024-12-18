@@ -4,7 +4,7 @@ const Features = () => {
   return (
     <div>
         <div className="">
-                <img src={featureDeskimg} alt='headerImg' />
+                <img src={featureDeskimg} alt='featureImg' />
             </div>
     </div>
   );
