@@ -7,11 +7,13 @@ import HeroSection from './components/HeroSection';
 import RegistrationImageBanner from './components/RegistrationImageBanner';
 import CustomerTestimonial from './components/CustomerTestimonial';
 import SymptomView from './components/SymptomView';
+import Banner from './components/Banner';
 
 function App() {
   return (
     <div className="App ">
       <Header/>
+      <Banner/>
       <Features/>
       <HeroSection/>
       <RegistrationImageBanner/>
