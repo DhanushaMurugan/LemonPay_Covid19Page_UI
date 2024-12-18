@@ -5,7 +5,7 @@ import reviewcard2 from "../Image/reviewDesk-img2.png";
 
 const CustomerTestimonial = () => {
   return (
-    <div className="relative w-full mt-32 h-screen">
+    <div className="relative w-full mt-32 mb-8 h-screen">
       {/* Main Image */}
       <div className="relative">
         <img
@@ -14,8 +14,8 @@ const CustomerTestimonial = () => {
           className="w-full h-auto object-cover"
         />
       {/* Optional Sliding Animation */}
-      <div className="relative w-full bottom-96 overflow-hidden">
-        <div className="flex  animate-slide">
+      <div className="relative w-full overflow-hidden" style={{ bottom: '32rem' }} >
+        <div className="flex animate-slide">
           <img
             src={reviewcard1}
             alt="reviewcard1"

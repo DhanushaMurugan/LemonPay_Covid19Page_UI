@@ -9,20 +9,17 @@ const HeroSection = () => {
   return (
     <div>
       <div className="">
-      <div className="bottom-auto   z-10">
+        <div className="bottom-auto   z-10">
           <img src={heroDeskimg1} alt="heroDeskimg1" />
         </div>
-      
-        
       </div>
 
-
-      <div className="relative flex h-screen items-center justify-center"  style={{ backgroundImage: `url(${bgimg})` }} >
       <div
-          className=" bg-cover bg-center h-screen"
-         
-        ></div>
-        
+        className="relative flex h-screen items-center justify-center bottom-16"
+        style={{ backgroundImage: `url(${bgimg})` }}
+      >
+        <div className=" bg-cover bg-center h-screen"></div>
+
         {/* Image Container */}
         <div className="relative w-full h-[70vh] flex items-center justify-center">
           {/* First Image */}
@@ -67,10 +64,9 @@ const HeroSection = () => {
             />
           </div>
         </div>
-       </div>
+      </div>
     </div>
   );
 };
 
 export default HeroSection;
-
