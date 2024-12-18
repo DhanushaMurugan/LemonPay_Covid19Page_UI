@@ -22,23 +22,23 @@ const Footer = () => {
   }, []);
 
   return (
-    <div className="relative w-full h-screen mt-20">
+    <div className="relative w-full h-screen ">
       {/* Footer Section */}
       <footer
         id="footer"
         className="relative w-full h-screen overflow-hidden flex items-center justify-center"
       >
-        {/* Default (1st) Image */}
+        {/* Default (1st) Image  */}
         <img
           src={footerImg1}
           alt="Footer Default"
-          className="w-full h-full object-cover transition-opacity duration-300"
+          className="w-full w-screen h-full mt-96 object-cover transition-opacity duration-300"
         />
         {/* Second Image (Appears After Scroll) */}
         <img
           src={footerImg2}
           alt="Footer Scroll"
-          className={`absolute top-0 bottom-40 left-0 w-full h-screen object-cover transform transition-transform duration-1000 ease-out delay-1000 ${
+          className={`absolute top-0 bottom-40 left-0 mt-8 w-screen h-30 object-cover transform transition-transform duration-1000 ease-out delay-1000 ${
             isVisible ? "scale-100 opacity-100" : "scale-50 opacity-0"
           }`}
         />
